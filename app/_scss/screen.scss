@@ -1,0 +1,129 @@
+@import "mixin";
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ~~ Reset ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+a img {
+	border: none;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,nav,section { 
+	display:block;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+/* ~~ REUSABLE ~~ */
+
+.hide  {
+	text-indent: -997;
+	height: 0px;
+}
+
+
+/* ~~ HEADER ~~ */
+.top-bg {
+	background-image: url(/_img/stardust.png);
+	height: 700px;
+	width: 100%;
+	color: #fff;
+}
+.top-logo {
+	width: 149px;
+	height:auto;
+	text-transform: uppercase;
+	line-height: 36px;
+	padding: 25px 0;
+
+
+	a {
+		color: #fff;
+		font-size: 36px;
+		font-weight: 700;
+		font-family: "Raleway";
+		text-decoration: none;	
+	}
+}
+
+.top-text {
+	text-align: center;
+	h1 {
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	p {
+		font-size: 16px;
+		font-family: "Lato";
+		font-weight: 300;
+	}
+}
+
+.hr-wrap {
+	padding: 15px 30px;
+	.hr-separation {
+		height: 2px;
+		width: 145px;
+		background: #da491c;
+		border: 1px;
+	}
+}
+
+/* ~~ MENU ~~ */
+
+/* ~~ INTRO ~~ */
+#intro {
+	background: #333;
+	color: #fff;
+	.intro-left-grid {
+		margin-left: 382.5px;
+		padding: 150px 0;
+	}		
+	h1 {
+		font-family: "Open Sans";
+		font-weight: 600;
+		color: #fff;
+		margin: 0 auto;
+		padding: 1px 0 47px 0px;
+	}
+	h3 {
+		@include h3;
+	}
+	p {
+		@include p;
+	}
+
+}
+.man-image {
+	height: 911px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
